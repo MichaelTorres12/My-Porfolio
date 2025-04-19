@@ -1,0 +1,198 @@
+/* Estilo Windows XP */
+body {
+  background-image: url('/windows.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: Tahoma, "Segoe UI", sans-serif;
+}
+
+/* Barra de título de ventanas XP */
+.window-header {
+  background: linear-gradient(to bottom, #0a246a, #3a6ea5);
+  color: white;
+  user-select: none;
+}
+
+/* Botones estilo XP */
+.xp-button {
+  background: linear-gradient(180deg, #fff 0%, #ecebe5 100%);
+  border: 1px solid #003c74;
+  border-radius: 3px;
+  color: #000;
+  box-shadow: 0 0 1px rgba(0,0,0,0.4);
+  font-size: 12px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.xp-button:hover {
+  background: linear-gradient(180deg, #f2f5fc 0%, #e0ecfd 100%);
+}
+
+.xp-button:active {
+  background: #d9e9ff;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.2);
+}
+
+/* Barra de tareas XP */
+.xp-taskbar {
+  background: linear-gradient(to bottom, #2681fc 0%, #0159b1 100%);
+  border-top: 1px solid #3a70c1;
+  height: 30px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Botón de inicio */
+.xp-start {
+  background: linear-gradient(to bottom, #4cbd1a 0%, #3aa90e 100%);
+  border-radius: 3px;
+  border: 1px solid #2e8507;
+}
+
+/* Ventanas XP */
+.xp-window {
+  border: 1px solid #0a246a;
+  border-radius: 3px;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+}
+
+/* Iconos del escritorio */
+.desktop-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 80px;
+  margin-bottom: 8px;
+  padding: 4px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.desktop-icon img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.3));
+}
+
+.desktop-icon span {
+  margin-top: 4px;
+  font-size: 11px;
+  line-height: 1.2;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0,0,0,1);
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.desktop-icon:hover {
+  background-color: rgba(49, 106, 197, 0.3);
+}
+
+.desktop-icon:active {
+  background-color: rgba(49, 106, 197, 0.5);
+}
+
+/* Agregar a los estilos de iconos */
+.desktop-icon:focus {
+  outline: none;
+}
+
+.desktop-icon.bg-blue-500\/30 {
+  background-color: rgba(49, 106, 197, 0.3);
+}
+
+/* Menú de inicio */
+.start-menu {
+  position: fixed;
+  bottom: 30px;
+  left: 0;
+  width: 320px;
+  height: 380px;
+  display: flex;
+  border: 1px solid #0a246a;
+  border-bottom: none;
+  border-radius: 3px 3px 0 0;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.5);
+  z-index: 900;
+}
+
+.start-menu-left {
+  width: 65%;
+  background-color: white;
+}
+
+.start-menu-header {
+  height: 54px;
+  background: linear-gradient(to right, #015db7, #2989d8, #b5d3f0);
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  border-bottom: 1px solid #3a70c1;
+}
+
+.start-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  cursor: default;
+}
+
+.start-menu-item:hover {
+  background-color: #2f71cd;
+  color: white;
+}
+
+.start-menu-item img {
+  width: 18px;
+  height: 18px;
+}
+
+.start-menu-item span {
+  font-size: 12px;
+}
+
+.start-menu-right {
+  width: 35%;
+  background-color: #d3e5fa;
+  border-left: 1px solid #7ba4d7;
+}
+
+/* Contenido de ventana */
+.window-content {
+  padding: 16px;
+  max-height: 400px;
+  overflow: auto;
+  background-color: white;
+  font-size: 12px;
+}
+
+/* Barra de tiempo */
+.time-bar {
+  background-color: #0b3e87;
+  height: 100%;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 11px;
+}
