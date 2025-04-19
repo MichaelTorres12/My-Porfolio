@@ -199,7 +199,8 @@ export default function ExperienceWindow({ onClose }: Props) {
 
   const renderWelcome = () => (
     <div className="prose max-w-none p-4">
-      <h1 className="mb-2">Bienvenido a mi sección de experiencia</h1>
+        <h1 className="mb-2">Michael Fernando Torres Callejas</h1>
+      <h2 className="mb-2">Bienvenido a mi sección de experiencia</h2>
       <p>Haz clic en un elemento del panel izquierdo para ver detalles.</p>
       <h2 className="mt-4 font-bold">Tech Stacks</h2>
         <ul className="list-disc pl-5 text-sm space-y-[2px]">
