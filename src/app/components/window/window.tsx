@@ -35,7 +35,7 @@ export default function Window({ title, children, onClose, width = "600px", icon
           <button onClick={onClose} className="xp-button px-1 mx-1 text-xs hover:bg-red-500 hover:text-white">×</button>
         </div>
       </div>
-      <div className="p-4 max-h-[500px] overflow-auto">{children}</div>
+      <div className="p-4 py-20 max-h-[500px] overflow-auto">{children}</div>
     </motion.div>
   )
 }

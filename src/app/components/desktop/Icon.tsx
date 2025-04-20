@@ -13,6 +13,7 @@ export default function Icon({
   icon,
   href,
   component,
+  download,
   onClick,
 }: Props) {
   const [isSelected, setIsSelected] = useState(false)
@@ -30,9 +31,21 @@ export default function Icon({
 
   /* clic único para abrir ventana o enlace */
   const handleOpen = () => {
-    if (href && !component) {
-      window.open(href, '_blank')
-    } else {
+    if (href) {
+      if (download) {
+        // Crear un elemento a y simular clic para descargar
+        const link = document.createElement('a')
+        link.href = href
+        link.download = href.split('/').pop() || 'download'
+        link.target = '_blank'
+        document.body.appendChild(link)
+        link.click()
+        document.body.removeChild(link)
+      } else {
+        // Abrir enlace normal en nueva pestaña
+        window.open(href, '_blank')
+      }
+    } else if (component) {
       onClick(id)
     }
   }

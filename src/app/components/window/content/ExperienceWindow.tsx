@@ -26,86 +26,81 @@ type Entry = {
 const work: Entry[] = [
     {
       id: 'yaya',
-      title: 'Yaya Facturas – Founding Engineer (2024‑25)',
-      icon: '/icons/folder.webp',
+      title: 'Yaya Technologies – Founding Engineer (2024‑25)',
+      icon: 'https://www.yayafacturas.com/yayafacturas-logo-min.png',
       content: {
-        title: 'Yaya Facturas',
+        title: 'Yaya Technologies',
         description:
-          'SaaS + APIaaS de facturación electrónica desplegado en AWS. Diseñé y construí la plataforma end‑to‑end liderando a un equipo de 3 devs.',
+          'Empresa proovedora de soluciones de facturación electrónica y ERP para PYMEs en El Salvador. Ofrecen soluciones de facturación electrónica, ERP, CRM, inventario, etc en su SaaS (Software as a Service) y APIaaS (Software as a Service).',
         contributions: [
-          'Arquitectura de microservicios (Node.js + TypeScript) con Docker',
-          'Frontend React / Next.js y TailwindCSS (Vercel)',
-          'CI/CD automático con GitHub Actions y CodePipeline',
-          'Infraestructura en AWS ECS Fargate, RDS PostgreSQL, API Gateway, S3',
-          'Caché distribuido con Redis para alto rendimiento'
+          'Como Full Stack Developer y Founding Engineer, lideré la creación y desarrollo completo de la plataforma desde cero, gestionando un equipo de desarrollo para implementar soluciones tanto en frontend como backend. Desarrollé la lógica de negocio principal, establecí pipelines automatizados CI/CD y diseñé una infraestructura escalable y segura en AWS.',
+          'Arquitectura de microservicios (Node.js + TypeScript) con Docker en AWS.',
+          'Frontend React / Next.js y TailwindCSS (Vercel).',
+          'CI/CD automático.',
+          'Infraestructura en AWS ECS Fargate, RDS PostgreSQL, API Gateway, S3.',
         ],
-        stack: ['TypeScript', 'Node.js', 'React', 'Next.js', 'AWS ECS', 'Docker', 'PostgreSQL'],
+        stack: ['Frontend: TypeScript, React, Next.js, TailwindCSS, Framer Motion.', 'Backend: Node.js, TypeScript, Express, PostgreSQL.', 'Infraestructura: AWS, Docker, CI/CD.', 'API: REST, GraphQL.'],
         images: ['/projects/yaya1.png', '/projects/yaya2.png', '/projects/yaya3.png', ],
         link: { url: 'https://yayafacturas.com', label: 'Visitar sitio' }
       }
     },
     {
       id: 'fguni',
-      title: 'Francisco Gavidia University – Full Stack Dev (2024)',
-      icon: '/icons/folder.webp',
+      title: 'Universidad Francisco Gavidia – Full Stack Dev (2024)',
+      icon: 'https://onlineuniversity.ufg.edu.sv/img/logos/Logo_Institucional_UFG/Logo_Institucional.png',
       content: {
         title: 'Modernización Sistema Bibliotecario',
         description:
-          'Migré un sistema PHP de 8 años a una arquitectura moderna REST + React, reduciendo la deuda técnica y acelerando la carga un 40 %.',
+          'Universidad privada de El Salvador, a pesar de que estudio aqui, igualmente trabje tras ver una vacante en el área de desarrollo por LinkedIn.',
         contributions: [
-          'Refactor de módulos críticos a Node.js + Express + TypeScript',
+          'Refactor de módulos críticos desde PHP a Node.js + Express + TypeScript',
           'Migración de vistas a React/Next.js con SSR',
           'Chatbot GPT para búsqueda de libros en tiempo real',
           'Mitigación de scraping con Cloudflare CDN (‑42 % de carga)'
         ],
-        stack: ['Node.js', 'TypeScript', 'React', 'Next.js', 'Cloudflare'],
+        stack: ['Frontend: React, Next.js, CSS', 'TypeScript', 'Backend: Node.js, Express.js, TypeScript', 'Infraestructura y seguridad: Cloudflare CDN', 'Otros: Integración de IA con ChatGPT, APIs RESTful'],
         images: [],
-        link: undefined
+        link: { url: 'https://ebiblioteca.ufg.edu.sv/opac-tmpl/bootstrap/bweb20/bibufg/index4.php?id=1', label: 'Visitar sitio' }    
       }
     },
     {
       id: 'emprende',
-      title: 'Emprende Hoy Foundation – Full Stack Dev (2022)',
-      icon: '/icons/folder.webp',
+      title: 'Fundación Emprende Hoy – Full Stack Dev (2022)',
+      icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0S3dRMMSGK8F3_D_Sb30ph9bi28nPDEywrQ&s',
       content: {
-        title: 'ERP Contable MERN',
+        title: 'Fundacion Emprende Hoy',
         description:
-          'ERP escalable para ONGs y PYMEs; manejó un incremento x3 en transacciones.',
+          'Organización sin fines de lucro dedicada a impulsar el desarrollo social y económico de jóvenes, estudiantes, emprendedores y startups en El Salvador, mediante programas de educación y transformación digital en tecnologías Web2 y Web3.',
         contributions: [
-          'Back‑end MongoDB + Express + React + Node (MERN)',
-          'Procesos específicos en Python (Django)',
-          'Mentor de 6 devs junior (‑25 % bugs)',
-          'Optimización de consultas PostgreSQL con ORM'
+          'Como Full Stack Developer, lideré el desarrollo y mantenimiento de un sistema ERP escalable utilizando el stack MERN (MongoDB, Express, React, Node.js), integrando Python (Django) para procesos backend específicos. Implementé APIs RESTful eficientes que conectaban un frontend en React con una arquitectura orientada a microservicios.',
+          'Además, mentoré a un equipo de 6 desarrolladores junior, mejorando significativamente la calidad del código y reduciendo errores en un 25%. Diseñé una arquitectura robusta capaz de manejar un aumento de 3 veces en el volumen de transacciones, integrando bases de datos PostgreSQL con soluciones ORM para optimizar el rendimiento y garantizar la consistencia de los datos.',
         ],
-        stack: ['React', 'Node.js', 'MongoDB', 'Python Django', 'PostgreSQL'],
+        stack: ['Frontend: React, ViteJS', 'Backend: Node.js, Express.js, Python (Django)', 'Bases de datos: MongoDB, PostgreSQL', 'Otros: APIs RESTful, Arquitectura de microservicios'],
         images: [],
-        link: undefined
+        link: { url: 'https://www.linkedin.com/company/fundacionemprendehoy/posts/?feedView=all', label: 'Visitar sitio' }
       }
     },
     {
       id: 'freelance',
-      title: 'Freelance – Software Dev (2022‑presente)',
-      icon: '/icons/folder.webp',
+      title: 'Freelance – Software Dev (2022-2025)',
+      icon: 'https://www.cdnlogo.com/logos/f/79/fiverr.svg',
       content: {
         title: 'Proyectos Freelance (23+)',
         description:
-          'Desarrollo de plataformas web/móvil para clientes en LATAM, USA y Europa.',
+          'Proyectos independientes desarrollados para clientes diversos a nivel internacional (USA, EU, LATAM), enfocados principalmente en la creación de plataformas web, aplicaciones móviles y soluciones backend personalizadas, utilizando tecnologías modernas y buenas prácticas de desarrollo. He completado exitosamente más de 23 proyectos en Latinoamérica, Estados Unidos y Europa, creando soluciones tecnológicas adaptadas a las necesidades específicas de cada cliente. Algunos proyectos destacados incluyen:',
         contributions: [
-          'Sistema de monitoreo de cámaras infrarrojas (SENSIA Solutions, ES)',
-          'App oficial Juegos Deportivos Chilenos 2023 (Android + Jetpack Compose)',
-          '15+ landing pages SEO para empresas como TransBank y MetaBix',
-          'Uso de AWS EC2, S3, Docker y despliegue continuo'
+          'Sistema de monitoreo de cámaras infrarrojas para SENSIA Solutions (España), incrementando en un 30% la visibilidad operacional de los equipos técnicos del cliente.',
+          'Aplicación oficial Android para los Juegos Deportivos Nacionales de Chile 2023, utilizada por más de 200 administradores y staff, optimizando notablemente la coordinación y comunicación en tiempo real.',
+          'Más de 15 sitios web y páginas de aterrizaje optimizadas para SEO para empresas como TransBank (Chile), MetaBix BioTech (Uruguay) y Leca Indumentaria (Argentina), mejorando significativamente la presencia digital de mis clientes.'
         ],
         stack: [
-          'React',
-          'Next.js',
-          'TypeScript',
-          'AWS',
-          'Kotlin',
-          'Jetpack Compose',
-          'Docker'
+          'Frontend: React, Next.js, TailwindCSS, Jetpack Compose (Kotlin)',
+          'Backend: Node.js, Express.js, TypeScript, Django, PHP, Ktor',
+          'Infraestructura y nube: AWS (EC2, S3), Docker, Render, Vercel',
+          'Bases de datos: PostgreSQL, MongoDB, MySQL, Firebase, Supabase',
+          'Otros: APIs RESTful, SEO, Git, integración continua y despliegue continuo (CI/CD)',
         ],
-        images: ['/screenshots/sensia1.jpg'],
+        images: [],
         link: undefined
       }
     }
@@ -115,62 +110,57 @@ const work: Entry[] = [
   const projects: Entry[] = [
     {
       id: 'ordenapp',
-      title: 'Ordena.app – Frontend Lead (2023‑24)',
-      icon: '/icons/folder.webp',
+      title: 'Ordena.app (2024 - Present)',
+      icon: 'https://www.ordena.app/assets/images/IndexPageImages/QuestionsAndAnswers/OrdenaAppLogoQ&AIcon.svg',
       content: {
-        title: 'Ordena.app',
+        title: 'Ordena App',
         description:
-          'E‑commerce vía WhatsApp para MIPYMEs; onboarding &lt; 5 min y generación de QR + facturas PDF.',
+          'Plataforma digital diseñada para pequeñas y medianas empresas, que facilita la creación rápida de tiendas en línea integradas con WhatsApp, permitiendo gestionar pedidos, pagos y facturación electrónica de manera sencilla e intuitiva directamente desde el WhatsApp del negocio (Shoptify para WhatsApp).',
         contributions: [
-          'Diseño de UI/UX y desarrollo frontend con Next.js + TailwindCSS',
-          'Integración WhatsApp Business API',
-          'Generación de PDFs con html2canvas & jsPDF',
-          'Dashboard de métricas en tiempo real'
+          'Desarrollador principal junto a mi hermano, lideré el diseño, desarrollo y despliegue integral del producto desde cero. Estuve a cargo del frontend con React y Next.js, implementé un backend robusto utilizando Node.js y Express, y gestioné el despliegue continuo en Vercel. Desarrollé integraciones clave como la generación automática de facturas, chatbots de WhatsApp, sistemas dinámicos de generación de códigos QR y reportes analíticos.'
         ],
-        stack: ['Next.js', 'TailwindCSS', 'MongoDB', 'WhatsApp API'],
-        images: ['/screenshots/ordena1.jpg'],
+        stack: ['Frontend: React, Next.js, TailwindCSS', 'Backend: Node.js, Express.js (TypeScript)', 'Infraestructura: Vercel, Docker, AWS, Render', 'Otros: WhatsApp API, generación dinámica de PDFs, QR dinámicos, sistemas CI/CD automatizados'],
+        images: [],
         link: { url: 'https://ordena.app', label: 'Probar demo' }
       }
     },
     {
       id: 'vibets',
-      title: 'ViBets – Co‑fundador (2024‑)',
-      icon: '/icons/folder.webp',
+      title: 'ViBets (2024‑Present)',
+      icon: '/icons/vibets-icon.png',
       content: {
         title: 'ViBets',
         description:
-          'App social de apuestas y retos con chat en tiempo real y monedas internas.',
+          'Red social orientada a grupos de amigos que permite realizar apuestas y desafíos divertidos entre sus miembros. A través de retos personalizados y apuestas amistosas con monedas virtuales, los usuarios compiten, interactúan y participan para ganas más monedas.',
         contributions: [
-          'App móvil con React Native Expo',
-          'Supabase para auth, SQL y almacenamiento de imágenes',
-          'Funciones programadas en SQL y cron jobs para liquidar apuestas',
-          'Publicación en Play Store (APK)'
+          'Creé desde cero tanto la aplicación móvil como el backend usando tecnologías modernas. Diseñé e implementé funcionalidades esenciales como creación y gestión de grupos, manejo dinámico de retos, lógica de apuestas, determinación automática de ganadores, notificaciones en tiempo real y una experiencia intuitiva y atractiva para el usuario. Además, desarrollé la identidad visual del proyecto, incluyendo la creación de la mascota oficial en estilo 3D.',
         ],
-        stack: ['React Native', 'Supabase', 'TypeScript'],
-        images: ['/screenshots/vibets1.jpg'],
+        stack: ['Frontend: React Native (Expo), TypeScript', 'Backend: Node.js, PostgreSQL (Supabase)', 'Infraestructura: Supabase Auth, Supabase Storage'],
+        images: [],
         link: {
-          url: 'https://expo.dev/accounts/michael_torres/projects/ViBets-app',
-          label: 'Descargar APK'
+          url: 'https://expo.dev/accounts/michael_torres/projects/ViBets-app/builds/5dc26c62-a9f7-497d-a425-f6175f0e26c0',
+          label: 'Descargar APK (Solo en Android)'
         }
       }
     },
     {
       id: 'pave',
       title: 'Pave Energy – Prototype (2023‑24)',
-      icon: '/icons/folder.webp',
+      icon: 'https://www.paveenergy.com/assets/logopng-DIguHWdG.png',
       content: {
         title: 'Pave Energy',
         description:
-          'Speed‑bump piezoeléctrico que convierte energía vehicular en eléctrica (Top 3 ASU‑UFG).',
+          'Proyecto enfocado en la generación de energía limpia a través de sistemas piezoeléctricos que capturan energía cinética vehicular mediante túmulos y placas especializadas instaladas en vías públicas, alineado con los objetivos de desarrollo sostenible (ODS) de la ONU. Llevado a cabo por mi, mi hermano y un compañero de la universidad.',
         contributions: [
           'Diseño del circuito piezoeléctrico y electrónica de potencia',
           'Programación de microcontroladores (Arduino C++)',
           'Dashboard Python para visualizar energía generada',
-          'Presentación en competencias nacionales e internacionales'
+          'Primer lugar en competencia nacional de Soluciones Sostenibles (ASU‑UFG)',
+          'Tercer lugar a nivel mundial en competencia llevada a cabo en la Universidad de Arizona State University en Tempe, Arizona, USA. donde competiamos contra otras 22 Universidades de todo el mundo.'
         ],
-        stack: ['Arduino', 'C++', 'Python', 'IoT'],
-        images: ['/screenshots/pave1.jpg'],
-        link: { url: 'https://github.com/michaeltorres/pave-energy', label: 'Ver repositorio' }
+        stack: ['Electrónica: Sensores piezoeléctricos, Arduino, componentes electrónicos de conversión y almacenamiento', 'Software: C++, Python (monitoreo en tiempo real y análisis de datos)'],
+        images: [],
+        link: { url: 'https://www.paveenergy.com/', label: 'Ver sitio' }
       }
     }
   ]
@@ -314,7 +304,7 @@ function Carousel({ images }: { images: string[] }) {
         </div>
 
         {/* Panel derecho */}
-        <div className="flex-1 bg-[#edf4fc] overflow-auto">
+        <div className="flex-1 bg-[#edf4fc] overflow-auto p-20">
           <div className="p-6 max-w-3xl mx-auto">
             {selected ? renderContent(selected) : renderWelcome()}
           </div>
@@ -345,13 +335,13 @@ function Section({
         <button
           key={e.id}
           onClick={() => onSelect(e)}
-          className={`flex items-center w-full gap-2 px-2 py-1 text-left text-xs hover:bg-xp-light/20 ${
+          className={`flex items-center w-full gap-2 px-2 py-3 text-left text-xs hover:bg-xp-light/20 ${
             activeId === e.id ? 'bg-white' : ''
           }`}
         >
         <img
         src={e.icon}
-        className="w-4 h-4 min-w-[16px] min-h-[16px] max-w-[16px] max-h-[16px] flex-shrink-0"
+        className="w-16 h-16 min-w-[24px] min-h-[24px] max-w-[24px] max-h-[24px] flex-shrink-0"
         alt=""
         />
           <span>{e.title}</span>

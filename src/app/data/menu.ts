@@ -4,6 +4,7 @@ export interface MenuItem {
     icon: string
     href?: string
     component?: string
+    download?: boolean
   }
   
   const menu: MenuItem[] = [
@@ -17,7 +18,8 @@ export interface MenuItem {
       id: 'resume',
       label: 'Mi Resumé',
       icon: '/icons/pdf.png',
-      href: '/Michael_Torres_CV_04-2025.pdf',
+      href: '/icons/Michael_Torres_CV_04-2025.pdf',
+      download: true
     },
     {
       id: 'linkedin',

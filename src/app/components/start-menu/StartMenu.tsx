@@ -1,6 +1,7 @@
 'use client'
 import items from '@/app/data/menu'
 import StartItem from './StartItem'
+import Image from 'next/image'
 
 interface Props {
   onClose: () => void
@@ -10,25 +11,37 @@ export default function StartMenu({ onClose }: Props) {
 
   return (
     <div
-      className="start-menu fixed left-0 bottom-9 w-80 h-[420px] flex shadow-xp"
+      className="start-menu"
       onClick={(e) => e.stopPropagation()}
     >
-      {/* Panel izquierdo */}
-      <div className="w-2/3 bg-white">
-        <div className="start-menu-header h-14 flex items-center pl-4 text-white font-bold">
-          Michael's PC
+      {/* Panel izquierdo con los elementos del menú */}
+      <div className="start-menu-left">
+        <div className="start-menu-header">
+          <div className="start-menu-user">
+            <span className="start-menu-username">Michael's PC</span>
+            <div className="start-menu-user-photo">
+              <img 
+                src="https://avatars.githubusercontent.com/u/138163445?v=4" 
+                alt="Michael Torres" 
+                className="user-photo"
+              />
+            </div>
+          </div>
         </div>
-        <ul className="px-2 pt-3">
+        <ul className="start-menu-items">
           {items.map((it) => (
             <StartItem key={it.id} {...it} onSelect={handleSelect} />
           ))}
         </ul>
-        <div className="absolute bottom-1 left-2 text-xs text-blue-800">
+        <div className="start-menu-footer">
           All Programs &rsaquo;
         </div>
       </div>
-      {/* Panel derecho (decorativo) */}
-      <div className="w-1/3 bg-gray-100 border-l border-gray-300" />
+      
+      {/* Panel derecho decorativo */}
+      <div className="start-menu-right">
+        {/* Podríamos añadir iconos de sistema o enlaces comunes aquí */}
+      </div>
     </div>
   )
 }

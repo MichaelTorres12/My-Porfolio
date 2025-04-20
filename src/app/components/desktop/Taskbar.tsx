@@ -1,27 +1,57 @@
 'use client'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import StartMenu from '@/app/components/start-menu/StartMenu'
 
 export default function Taskbar() {
   const [open, setOpen] = useState(false)
-  const currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+  const [time, setTime] = useState('')
+  const [date, setDate] = useState('')
+  
+  useEffect(() => {
+    const updateDateTime = () => {
+      const now = new Date()
+      setTime(now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }))
+      setDate(now.toLocaleDateString())
+    }
+    
+    updateDateTime()
+    const interval = setInterval(updateDateTime, 60000)
+    return () => clearInterval(interval)
+  }, [])
 
   return (
     <>
-      <div className="fixed bottom-0 left-0 xp-taskbar w-full h-9 flex items-center justify-between shadow-xp z-50">
-        <div className="flex items-center">
+      {open && (
+        <div 
+          className="fixed inset-0 z-40" 
+          onClick={() => setOpen(false)}
+        />
+      )}
+      <div className="xp-taskbar flex items-center justify-between">
+        <div className="flex items-center h-full">
           <button
-            onClick={() => setOpen((p) => !p)}
-            className="flex items-center h-7 px-3 mx-1 xp-start hover:brightness-110"
+            onClick={() => setOpen(prev => !prev)}
+            className="xp-start flex items-center justify-between"
           >
-            <span className="text-white font-bold capitalize h-20">start</span>
+            <img 
+              src="/icons/windowsLogo.png" 
+              alt="Windows" 
+              className="windows-logo"
+              height={24}
+              width={24}
+            />
+            <span className="font-bold ">inicio</span>
           </button>
           
           {/* Aquí puedes agregar botones de aplicaciones abiertas */}
+          <div className="flex ml-2 h-full">
+            {/* Puedes añadir iconos de aplicaciones aquí si es necesario */}
+          </div>
         </div>
         
-        <div className="bg-[#0b3e87] h-full px-2 flex items-center text-white text-xs">
-          {currentTime}
+        <div className="bg-[#0b3e87] h-full px-6 w-60 flex flex-col justify-center items-end">
+          <div className="text-white text-xs">{time}</div>
+          <div className="text-white text-[10px] ">{date}</div>
         </div>
       </div>
       {open && <StartMenu onClose={() => setOpen(false)} />}
