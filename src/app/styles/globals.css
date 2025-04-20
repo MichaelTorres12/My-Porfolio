@@ -8,6 +8,8 @@
   --xp-light-blue: #3a6ea5;
   --xp-green: #4cbd1a;
   --xp-gray: #d4d0c8;
+  --taskbar-height: 40px;
+  --taskbar-height-mobile: 50px;
 }
 
 /* Fondo clásico Windows XP Bliss */
@@ -23,4 +25,18 @@ body {
   background-repeat: no-repeat;
   font-family: Tahoma, "Segoe UI", sans-serif;
   user-select: none;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+  body {
+    /* Ajustar el fondo para pantallas pequeñas */
+    background-size: auto 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --taskbar-height: var(--taskbar-height-mobile);
+  }
 }
